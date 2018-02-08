@@ -20,6 +20,7 @@ type Player interface {
 }
 
 var genericPlayers = []GenericPlayer{
+	{Name: "OMXPlayer", Args: []string{"omxplayer", "-o", "hdmi"}},
 	{Name: "VLC", Args: []string{"vlc"}},
 	{Name: "MPV", Args: []string{"mpv"}},
 	{Name: "MPlayer", Args: []string{"mplayer"}},
