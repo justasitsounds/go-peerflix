@@ -16,7 +16,7 @@ type SeekableContent interface {
 // FileEntry helps reading a torrent file.
 type FileEntry struct {
 	*torrent.File
-	*torrent.Reader
+	torrent.Reader
 }
 
 // Seek seeks to the correct file position, paying attention to the offset.
