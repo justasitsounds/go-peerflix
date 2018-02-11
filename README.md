@@ -11,10 +11,11 @@ Start watching the movie while your torrent is still downloading!
 
 Download the binary from the [releases](https://github.com/Sioro-Neoku/go-peerflix/releases) page.
 
-Or in case you have golang configured you may want to install through the command:
+Or in case you have golang configured you may want to build from source (requires dep for vendoring)
 
 ```sh
-go get github.com/Sioro-Neoku/go-peerflix
+git clone https://github.com/Sioro-Neoku/go-peerflix
+dep ensure
 ```
 
 ## Usage
@@ -28,7 +29,7 @@ To start playing in VLC:
 go-peerflix -player vlc [magnet url|torrent path|torrent url]
 ```
 
-Currently supported players are: VLC, MPlayer and MPV
+Currently supported players are: VLC, MPlayer, OMXPlayer and MPV
 
 ## Build
 
